@@ -21,7 +21,7 @@ export const projects = [
     title: "SpråkKollen",
     description: "A linguistic tool using a hybrid Dictionary/API approach to solve the 'En/Ett' grammar challenge for Swedish learners.",
     tech: ["React", "REST API", "JSON", "Debounce"],
-    liveLink: "https://swedish-ett-en.vercel.app", // Replace with your actual Vercel URL
-    githubLink: "https://github.com/daveadane/swedish-ett-en"
+    Link: "https://swedish-ett-en.vercel.app/", // Replace with your actual Vercel URL
+    github: "https://github.com/daveadane/swedish-ett-en"
   }
 ];
