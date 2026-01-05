@@ -27,6 +27,38 @@ body, html {
   box-sizing: border-box;
 }
 
+/* Ensure project links are visible and spaced correctly */
+.project-links {
+  margin-top: auto;
+  display: flex;
+  gap: 15px;
+  padding-top: 15px;
+  justify-content: center; /* Centers the links inside the card */
+}
+
+.project-links a {
+  text-decoration: none;
+  color: #ffffff !important; /* Forces text to be white */
+  font-weight: bold;
+  font-size: 0.85rem;
+  padding: 8px 16px;
+  border-radius: 8px;
+  transition: opacity 0.2s;
+}
+
+.live-link {
+  background: linear-gradient(45deg, var(--primary), var(--secondary));
+}
+
+.repo-link {
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.project-links a:hover {
+  opacity: 0.8;
+}
+
 /* 3. THREE EQUAL SECTIONS */
 .hero, .projects-section, .contact-section {
   flex: 1;
