@@ -14,5 +14,13 @@ export const projects = [
     link: "https://movie-serch-engine.vercel.app/", 
     github: "https://github.com/daveadane/movie-search-engine",
     image: "/movie-screenshot.png"
-  }
+  },
+
+  {
+  title: "SpråkKollen",
+  description: "A linguistic tool using a hybrid Dictionary/API approach to solve the 'En/Ett' grammar challenge for Swedish learners.",
+  tech: ["React", "REST API", "JSON", "Debounce"],
+  liveLink: "https://swedish-ett-en.vercel.app", // Replace with your actual Vercel URL
+  githubLink: "https://github.com/daveadane/swedish-ett-en"
+}
 ];
