@@ -66,10 +66,22 @@ body, html {
   backdrop-filter: blur(12px);
   border: 1px solid var(--border);
   border-radius: 20px;
-  padding: 20px;
+  padding: 15px; /* Reduced padding to fit content better */
   display: flex;
   flex-direction: column;
-  justify-content: space-between; /* Pushes links to the bottom */
+  justify-content: space-between; 
+  height: 100%; /* Fill the available section height */
+}
+.project-card h3 {
+  font-size: 1.2rem; /* Slightly smaller title */
+  margin: 0 0 5px 0;
+  color: var(--primary);
+}
+
+.project-card p {
+  font-size: 0.85rem; /* Smaller text to prevent overlap */
+  line-height: 1.4;
+  margin-bottom: 10px;
 }
 
 /* FIXING THE MISSING BUTTONS */
@@ -90,12 +102,30 @@ body, html {
 .project-links {
   display: flex;
   gap: 10px;
-  margin-top: auto;
+  margin-top: auto; /* Pushes buttons to the bottom */
+  padding-top: 5px;
+}
+
+.project-links a {
+  flex: 1; /* Makes buttons equal width */
+  text-align: center;
+  padding: 6px 10px; /* Slimmer buttons */
+  font-size: 0.8rem;
+  border-radius: 8px;
+  text-decoration: none;
+  color: white !important;
+  font-weight: 600;
 }
 
 /* 6. CONTACT SECTION */
-.contact-section {
-  border-top: 1px solid var(--border);
+.contact-section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.contact-section p {
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
 }
 
 .social-links {
