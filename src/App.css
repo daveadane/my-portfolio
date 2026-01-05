@@ -11,7 +11,7 @@ body, html {
   padding: 0;
   height: 100vh;
   width: 100vw;
-  overflow: hidden; /* This prevents vertical scrolling */
+  overflow: hidden; 
   background: #0f172a;
   color: white;
   font-family: 'Inter', sans-serif;
@@ -27,38 +27,6 @@ body, html {
   box-sizing: border-box;
 }
 
-/* Ensure project links are visible and spaced correctly */
-.project-links {
-  margin-top: auto;
-  display: flex;
-  gap: 15px;
-  padding-top: 15px;
-  justify-content: center; /* Centers the links inside the card */
-}
-
-.project-links a {
-  text-decoration: none;
-  color: #ffffff !important; /* Forces text to be white */
-  font-weight: bold;
-  font-size: 0.85rem;
-  padding: 8px 16px;
-  border-radius: 8px;
-  transition: opacity 0.2s;
-}
-
-.live-link {
-  background: linear-gradient(45deg, var(--primary), var(--secondary));
-}
-
-.repo-link {
-  border: 1px solid var(--border);
-  background: rgba(255, 255, 255, 0.1);
-}
-
-.project-links a:hover {
-  opacity: 0.8;
-}
-
 /* 3. THREE EQUAL SECTIONS */
 .hero, .projects-section, .contact-section {
   flex: 1;
@@ -67,7 +35,7 @@ body, html {
   justify-content: center;
   align-items: center;
   padding: 1rem;
-  min-height: 0; /* Important for flex items to prevent overflow */
+  min-height: 0;
 }
 
 /* 4. HERO SECTION */
@@ -75,40 +43,59 @@ body, html {
   font-size: 2.8rem;
   margin: 0;
   background: linear-gradient(to right, var(--primary), var(--secondary));
-  background-clip: text;
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-/* 5. HORIZONTAL PROJECT SCROLL */
+/* 5. PROJECT GRID & CARDS */
 .project-grid {
   display: flex;
   gap: 1.5rem;
-  overflow-x: auto; /* Allow left-to-right scrolling */
+  overflow-x: auto;
   width: 95%;
   padding: 10px;
-  scrollbar-width: none; /* Hide scrollbar for Firefox */
+  scrollbar-width: none;
 }
 
-.project-grid::-webkit-scrollbar {
-  display: none; /* Hide scrollbar for Chrome/Safari */
-}
+.project-grid::-webkit-scrollbar { display: none; }
 
 .project-card {
-  min-width: 300px; /* Fixed width so they stay side-by-side */
+  min-width: 320px;
   background: var(--glass);
   backdrop-filter: blur(12px);
   border: 1px solid var(--border);
   border-radius: 20px;
   padding: 20px;
-  transition: all 0.3s ease;
-  flex-shrink: 0; /* Prevents cards from squishing */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Pushes links to the bottom */
+}
+
+/* FIXING THE MISSING BUTTONS */
+/* This targets the links at the bottom of your project cards */
+.project-card a {
+  text-decoration: none !important;
+  color: white !important;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 0.85rem;
+  margin-top: 15px;
+  display: inline-block;
+  background: linear-gradient(45deg, var(--primary), var(--secondary)); /* Default to button style */
+}
+
+/* If you have a specific container for them */
+.project-links {
+  display: flex;
+  gap: 10px;
+  margin-top: auto;
 }
 
 /* 6. CONTACT SECTION */
 .contact-section {
   border-top: 1px solid var(--border);
-  margin-top: 0; /* Removed margin to save space */
 }
 
 .social-links {
@@ -117,22 +104,16 @@ body, html {
   margin-top: 15px;
 }
 
-.contact-btn {
+.contact-btn, .social-links a {
   padding: 10px 20px;
   background: var(--glass);
   border: 1px solid var(--border);
   border-radius: 10px;
-  color: white;
+  color: white !important;
   text-decoration: none;
-  transition: 0.3s;
   font-size: 0.9rem;
 }
 
-/* REUSABLE UTILITY */
-.skills-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  justify-content: center;
-  margin-top: 10px;
+.contact-btn:hover {
+  background: var(--primary);
 }
