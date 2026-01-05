@@ -11,7 +11,7 @@ function App() {
         
         <section className="skills">
           <h2>Tech Stack</h2>
-          <div className="skills-container">
+          <div className="tech-stack-container">
             <span>React</span>
             <span>JavaScript (ES6+)</span>
             <span>CSS3 (Grid/Flex)</span>
