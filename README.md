@@ -27,5 +27,5 @@ I am currently focused on building high-performance web applications and masteri
 
 ## 📫 Connect with Me
 - **GitHub:** [daveadane](https://github.com/daveadane)
-- **LinkedIn:** [Your LinkedIn Profile Link]
+- **LinkedIn:** [www.linkedin.com/in/dawit-adane-50260b63]
 - **Email:** daveadane@gmail.com
