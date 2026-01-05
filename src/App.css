@@ -5,13 +5,13 @@
   --border: rgba(255, 255, 255, 0.1);
 }
 
-/* 1. LAYOUT RESET */
+/* 1. VIEWPORT LOCK */
 body, html {
   margin: 0;
   padding: 0;
   height: 100vh;
   width: 100vw;
-  overflow: hidden; 
+  overflow: hidden; /* Keeps it to one page */
   background: #0f172a;
   color: white;
   font-family: 'Inter', sans-serif;
@@ -21,54 +21,62 @@ body, html {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-between; /* This spaces out Top, Middle, Bottom */
+  justify-content: space-between;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 10px 20px;
   box-sizing: border-box;
 }
 
-/* 2. TECH STACK (Spacing Fix) */
+/* 2. TECH STACK SPACING */
 .tech-stack-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 12px;
+  gap: 10px;
   justify-content: center;
-  margin: 15px 0;
+  margin-top: 10px;
 }
 
 .tech-stack-container span {
   background: var(--glass);
-  padding: 6px 15px;
-  border-radius: 20px;
-  border: 1px solid var(--secondary); /* Cyan border makes it pop */
-  font-size: 0.85rem;
+  padding: 4px 12px;
+  border-radius: 15px;
+  border: 1px solid var(--secondary);
+  font-size: 0.8rem;
 }
 
-/* 3. PROJECT CARDS - THE "SIGN" (Interactive) */
+/* 3. PROJECT SECTION & HOVER SIGN */
+.project-section { /* Matches your JSX className */
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 0;
+}
+
 .project-grid {
   display: flex;
   gap: 20px;
   justify-content: center;
-  width: 100%;
+  padding: 10px 0;
 }
 
 .project-card {
   flex: 1;
-  max-width: 450px;
+  max-width: 400px;
   background: var(--glass);
   border: 1px solid var(--border);
   border-radius: 20px;
   padding: 20px;
-  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: all 0.3s ease-out;
   cursor: pointer;
 }
 
-/* Hover Effect: Glow and Lift */
+/* THE "SIGN" - Lift and Glow */
 .project-card:hover {
   transform: translateY(-8px);
   border-color: var(--primary);
-  box-shadow: 0 10px 30px rgba(79, 172, 254, 0.3);
+  box-shadow: 0 10px 25px rgba(79, 172, 254, 0.3);
 }
 
 .project-links {
@@ -81,41 +89,41 @@ body, html {
   flex: 1;
   text-align: center;
   text-decoration: none;
-  padding: 10px;
-  border-radius: 10px;
+  padding: 8px;
+  border-radius: 8px;
   font-weight: bold;
   color: white !important;
-  background: var(--primary);
 }
 
-/* 4. CONTACT SECTION FIX (Buttons) */
+.live-link { background: var(--primary); }
+.repo-link { border: 1px solid var(--border); background: var(--glass); }
+
+/* 4. CONTACT BUTTONS FIX */
 .contact-section {
-  text-align: center;
   padding: 20px 0;
   border-top: 1px solid var(--border);
+  text-align: center;
 }
 
 .social-links {
   display: flex;
   justify-content: center;
   gap: 15px;
-  margin-top: 15px;
+  margin-top: 10px;
 }
 
-/* This brings back your Email/GitHub/LinkedIn buttons */
-.social-links a, .contact-btn {
-  padding: 12px 25px;
+.contact-btn {
+  padding: 10px 20px;
   background: var(--glass);
   border: 1px solid var(--border);
-  border-radius: 12px;
+  border-radius: 10px;
   color: white !important;
   text-decoration: none;
   font-weight: 600;
   transition: 0.3s;
 }
 
-.social-links a:hover {
+.contact-btn:hover {
   background: var(--primary);
-  transform: translateY(-3px);
-  box-shadow: 0 5px 15px rgba(79, 172, 254, 0.4);
+  transform: translateY(-2px);
 }
