@@ -47,7 +47,7 @@ function App() {
         <h2>Get In Touch</h2>
         <p>I'm currently looking for new opportunities. Feel free to reach out!</p>
         <div className="social-links">
-          <a href="daveadane@gmail.com" className="contact-btn">Email Me</a>
+          <a href="mailto:daveadane@gmail.com" className="contact-btn">Email Me</a>
           <a href="https://github.com/daveadane" target="_blank" rel="noreferrer" className="contact-btn">GitHub</a>
           <a href="https://www.linkedin.com/in/dawit-adane-50260b63" target="_blank" rel="noreferrer" className="contact-btn">LinkedIn</a>
         </div>
