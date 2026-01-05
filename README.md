@@ -3,7 +3,7 @@
 Welcome to my professional portfolio. This site serves as a central hub for my work, showcasing my skills in React development, API integration, and modern UI/UX design.
 
 ## 🚀 Live Site
-[**View My Live Portfolio Here**](my-portfolio-lac-omega-13.vercel.app) 
+[**View My Live Portfolio Here**](https://my-portfolio-lac-omega-13.vercel.app/) 
 
 ## 🛠️ Featured Projects
 
