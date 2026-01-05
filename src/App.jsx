@@ -49,7 +49,7 @@ function App() {
         <div className="social-links">
           <a href="mailto:your-email@example.com" className="contact-btn">Email Me</a>
           <a href="https://github.com/daveadane" target="_blank" rel="noreferrer" className="contact-btn">GitHub</a>
-          <a href="https://linkedin.com/in/your-profile" target="_blank" rel="noreferrer" className="contact-btn">LinkedIn</a>
+          <a href="https://www.linkedin.com/in/dawit-adane-50260b63" target="_blank" rel="noreferrer" className="contact-btn">LinkedIn</a>
         </div>
       </footer>
     </div>
