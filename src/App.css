@@ -28,48 +28,60 @@ body, html {
 }
 
 /* 2. TECH STACK FIX (Centered and Spaced) */
+/* Center the Tech Stack with spacing */
 .tech-stack-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 15px; /* Adds space between React, Python, etc. */
+  gap: 12px; /* This creates the space between each skill */
   justify-content: center;
-  max-width: 800px;
-  margin-top: 10px;
+  max-width: 900px;
+  margin: 20px auto;
 }
 
 .tech-stack-container span {
   background: var(--glass);
-  padding: 5px 15px;
-  border-radius: 15px;
+  padding: 6px 15px;
+  border-radius: 20px;
   border: 1px solid var(--border);
   font-size: 0.9rem;
-  color: var(--secondary);
+  transition: 0.3s;
 }
 
-/* 3. PROJECT CARDS - INTERACTIVE SIGN */
-.project-grid {
-  display: flex;
-  gap: 2rem;
-  justify-content: center;
-  width: 100%;
-}
-
+/* INTERACTIVE PROJECT CARDS */
 .project-card {
   min-width: 350px;
   background: var(--glass);
   border: 1px solid var(--border);
   border-radius: 20px;
   padding: 25px;
-  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* Smooth movement */
+  transition: all 0.4s ease; /* This makes the movement smooth */
+  position: relative;
   cursor: pointer;
 }
 
-/* THIS IS THE SIGN WHEN CURSOR MOVES */
+/* THE "SIGN" - When cursor moves over the project */
 .project-card:hover {
-  transform: scale(1.05); /* Card grows slightly */
+  transform: translateY(-10px) scale(1.02); /* Moves UP and grows slightly */
   border-color: var(--primary);
-  background: rgba(255, 255, 255, 0.1);
-  box-shadow: 0 0 30px rgba(79, 172, 254, 0.3); /* Blue glow */
+  background: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 15px 35px rgba(79, 172, 254, 0.4); /* Blue glow effect */
+}
+
+/* Centering the Projects Section */
+.projects-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-grid {
+  display: flex;
+  gap: 2.5rem;
+  justify-content: center;
+  width: 100%;
+  padding: 20px 0;
 }
 
 /* 4. BUTTONS */
