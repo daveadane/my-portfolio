@@ -15,7 +15,7 @@ export const projects = [
     github: "https://github.com/daveadane/movie-search-engine",
     image: "/movie-screenshot.png"
   },
-
+/*
   {
     id: 3,
     title: "SpråkKollen",
@@ -24,4 +24,5 @@ export const projects = [
     link: "https://swedish-ett-en.vercel.app/", 
     github: "https://github.com/daveadane/swedish-ett-en"
   }
+ */   
 ];
